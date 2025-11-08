@@ -5,7 +5,7 @@ import { Linkedin, Instagram, Phone, X } from "lucide-react"
 
 export default function Header() {
   return (
-    <header className="w-full bg-[#132115] text-white border-b border-white/20 px-6 py-2 flex items-center justify-between">
+    <header className="w-full bg-[#132115] text-white border-white/20 px-6 py-2 flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center gap-3">
         <Image src="/images/logo1.png" alt="Akagera Logo" width={80} height={80} />
@@ -37,7 +37,7 @@ export default function Header() {
 
         <a
           href="/contact"
-          className="ml-4 mr-4 border border-white px-3 py-2 rounded-lg text-sm hover:bg-white hover:text-black transition"
+          className="ml-4 mr-4 border border-white px-3 py-2 text-sm hover:bg-white hover:text-black transition"
         >
           Contact Us ↗
         </a>
