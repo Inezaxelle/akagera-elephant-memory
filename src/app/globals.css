@@ -1,9 +1,26 @@
 /* globals.css */
 @import "tailwindcss";
+
 :root {
-  --dark-green: #132115;
-  --white: #ffffff;
-  --light-grey: #e8e8e8;
+  /* Design System Colors */
+  /* 
+   * Usage examples:
+   * - In CSS: background: var(--color-primary);
+   * - In Tailwind: className="bg-[var(--color-primary)]"
+   * - In inline styles: style={{ backgroundColor: 'var(--color-primary)' }}
+   * - Import from lib/colors.ts for TypeScript usage
+   */
+  --color-primary: #355E3B;      /* Primary green */
+  --color-secondary: #132115;    /* Dark green (background) */
+  --color-light: #C0CDC2;        /* Light sage green */
+  --color-black: #202326;        /* Dark gray/black */
+  --color-gray: #D9DFE6;         /* Light gray */
+  --color-white: #ffffff;        /* White */
+  
+  /* Legacy support (keeping for backward compatibility) */
+  --dark-green: var(--color-secondary);
+  --white: var(--color-white);
+  --light-grey: var(--color-gray);
 }
 
 * {
@@ -11,12 +28,35 @@
 }
 
 body {
-  background: var(--dark-green);
-  color: var(--white);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-secondary);
+  color: var(--color-white);
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Typography Utilities */
+.font-serif {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+}
+
+.font-sans {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* Scroll indicator animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
 }

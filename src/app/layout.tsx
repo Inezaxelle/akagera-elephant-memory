@@ -1,10 +1,20 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Cinzel } from "next/font/google";
+import { Cinzel, Inter } from "next/font/google";
 
-const cinzel = Cinzel({ subsets: ["latin"], weight: ["400", "700"] });
+const cinzel = Cinzel({ 
+  subsets: ["latin"], 
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-serif",
+  display: "swap",
+});
 
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
 
 export const metadata = {
   title: "Akagera Elephant Memory",
@@ -18,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cinzel.className}>
+      <body className={`${inter.variable} ${cinzel.variable} font-sans`}>
         <Header />
         <main>{children}</main>
         <Footer />
