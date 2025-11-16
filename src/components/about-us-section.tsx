@@ -65,10 +65,10 @@ export function AboutSection() {
             <div className="text-sm text-[#4C8C4A] mt-6">
               – Godfreud NYAMURANGWA, Founder
             </div>
-
+{/* 
             <button className="mt-12 px-6 py-3 border border-[#4C8C4A] text-[#355E3B] hover:bg-[#CFE8D4] transition-colors font-medium tracking-wide text-sm">
               Learn More →
-            </button>
+            </button> */}
           </div>
 
           {/* Right Column */}
