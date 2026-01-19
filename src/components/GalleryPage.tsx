@@ -92,13 +92,7 @@ export default function GalleryPage() {
           </p>
         </div>
 
-        {/* Scroll Down Button */}
-        <div className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2">
-          <button className="bg-[#132115] border-2 border-[#355e3b] rounded-full w-24 h-24 md:w-32 md:h-32 flex flex-col items-center justify-center hover:bg-[#355e3b]/20 transition-colors group">
-            <span className="text-[#ffffff] text-[10px] md:text-xs tracking-wider mb-1 md:mb-2">SCROLL DOWN</span>
-            <ArrowDown className="w-4 h-4 md:w-5 md:h-5 text-[#ffffff] group-hover:translate-y-1 transition-transform" />
-          </button>
-        </div>
+
       </section>
 
       {/* Gallery Section */}
@@ -115,45 +109,29 @@ export default function GalleryPage() {
 
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Filter Sidebar */}
-            <aside className="lg:w-48 flex-shrink-0">
-              <div className="bg-[#ffffff] rounded-lg p-4 lg:p-6 space-y-2">
-                {['All', 'Clan A', 'Clan B', 'Tours', 'Others'].map((filter) => (
-                  <button
-                    key={filter}
-                    onClick={() => setActiveFilter(filter)}
-                    className={`w-full text-left px-4 py-2 rounded transition-colors ${
-                      activeFilter === filter 
-                        ? 'bg-[#355e3b] text-[#ffffff]' 
-                        : 'text-[#132115] hover:bg-[#ebefeb]'
-                    }`}
-                  >
-                    {filter}
-                  </button>
-                ))}
-              </div>
-            </aside>
+          
 
             {/* Masonry Gallery */}
             <div className="flex-1">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-auto">
+              <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-2 auto-rows-[300px] ">
                 {/* Tall image 1 */}
-                <div className="md:row-span-2 overflow-hidden rounded-lg">
+                <div className="row-span-2 overflow-hidden rounded-lg">
                   <Image
-                    src="/images/elephant1.jpg"
+                    src="/images/9T6A0871.jpg"
                     alt="Elephant under shelter"
-                    width={400}
-                    height={600}
+                    width={150}
+                    height={300}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 {/* Wide image 1 */}
-                <div className="md:col-span-2 overflow-hidden rounded-lg">
+                <div className="col-span-2 overflow-hidden rounded-lg">
                   <Image
-                    src="/images/elephant1.jpg"
+                    src="/images/9T6A0874.jpg"
                     alt="Elephants in sanctuary"
-                    width={800}
-                    height={400}
+                    width={300}
+                    height={150}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -161,10 +139,10 @@ export default function GalleryPage() {
                 {/* Square images */}
                 <div className="overflow-hidden rounded-lg">
                   <Image
-                    src="/images/elephant1.jpg"
+                    src="/images/9T6A0877.jpg"
                     alt="Young elephant walking"
-                    width={400}
-                    height={400}
+                    width={150}
+                    height={150}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -173,64 +151,117 @@ export default function GalleryPage() {
                   <Image
                     src="/images/elephant1.jpg"
                     alt="Elephants near fence"
-                    width={400}
-                    height={400}
+                    width={150}
+                    height={150}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/9T6A0910.jpg"
+                    alt="Elephant portrait"
+                    width={150}
+                    height={150}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/9T6A0967.jpg"
+                    alt="Elephant walking"
+                    width={150}
+                    height={150}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 {/* Tall image 2 */}
-                <div className="md:row-span-2 overflow-hidden rounded-lg">
+                <div className="row-span-2 overflow-hidden rounded-lg">
                   <Image
-                    src="/images/elephant1.jpg"
+                    src="/images/9T6A0970.jpg"
                     alt="Two elephants together"
-                    width={400}
-                    height={600}
+                    width={150}
+                    height={300}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 {/* Wide image 2 */}
-                <div className="md:col-span-2 overflow-hidden rounded-lg">
+                <div className="col-span-2 overflow-hidden rounded-lg">
                   <Image
-                    src="/images/elephant1.jpg"
+                    src="/images/9T6A1986.jpg"
                     alt="Elephant in grassland"
-                    width={800}
-                    height={400}
+                    width={300}
+                    height={150}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
-                {/* Additional images for variety */}
+                {/* Additional images */}
                 <div className="overflow-hidden rounded-lg">
                   <Image
-                    src="/images/elephant1.jpg"
+                    src="/images/9T6A2262.jpg"
                     alt="Elephant bathing"
-                    width={400}
-                    height={400}
+                    width={150}
+                    height={150}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="overflow-hidden rounded-lg">
                   <Image
-                    src="/images/elephant1.jpg"
-                    alt="Baby elephant"
-                    width={400}
-                    height={400}
+                    src="/images/9T6A2267.jpg"
+                    alt="Elephant herd"
+                    width={150}
+                    height={150}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="overflow-hidden rounded-lg">
                   <Image
-                    src="/images/elephant1.jpg"
-                    alt="Elephant herd at sunset"
-                    width={400}
-                    height={400}
+                    src="/images/9T6A2282.jpg"
+                    alt="Elephant grazing"
+                    width={150}
+                    height={150}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
+
+                {/* More images - second row */}
+                <div className="col-span-2 overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/9T6A2285.jpg"
+                    alt="Elephants walking"
+                    width={300}
+                    height={150}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+
+                {/* <div className="overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/elephant.png"
+                    alt="Elephant"
+                    width={150}
+                    height={150}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div> */}
+
+                <div className="row-span-2 overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/9T6A2535.jpg"
+                    alt="Elephant portrait"
+                    width={150}
+                    height={300}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
 
 export function AboutSection() {
   const highlights = [
@@ -23,98 +24,105 @@ export function AboutSection() {
   ];
 
   return (
-    <section className="relative min-h-screen bg-[#F5F5F5] text-[#1A3320] overflow-hidden">
-      {/* Decorative elements (turn blacks → deep greens) */}
-      <div className="absolute top-8 left-20 w-24 h-24 rounded-full bg-[#1A3320] opacity-30" />
-      <div className="absolute top-12 right-32 w-32 h-8 bg-[#1A3320] opacity-30 rounded" />
-      <div className="absolute top-20 left-1/3 w-28 h-28 rounded-full bg-[#1A3320] opacity-30" />
+    <section className="relative bg-[#fbf9f9] text-[#1A3320] overflow-hidden pt-20 pb-32">
+      {/* Central dotted line from hero */}
+      <div className="absolute left-1/2 top-0 bottom-0 w-px border-l-2 border-dashed border-[#355e3b]/30 -translate-x-1/2 z-0" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 lg:py-32">
-        
-        {/* Header */}
-        <div className="text-center mb-16 sm:mb-20">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="w-12 h-px bg-[#4C8C4A]" />
-            <span className="text-sm tracking-widest text-[#1A3320] uppercase">
-              About us
-            </span>
-            <div className="w-12 h-px bg-[#4C8C4A]" />
-          </div>
+      {/* Dotted Line Separator at top with ABOUT US label */}
+      <div className="relative w-full flex items-center justify-center mb-20">
+        <div className="flex-1 border-t-2 border-dashed border-[#355e3b]/40 ml-8" />
+        <div className="flex items-center gap-2 px-4 bg-[#fbf9f9]">
+          <span className="w-1.5 h-1.5 bg-[#355e3b] rounded-full" />
+          <span className="text-xs tracking-[0.2em] text-[#355e3b] uppercase font-medium">
+            ABOUT US
+          </span>
         </div>
+        <div className="flex-1 border-t-2 border-dashed border-[#355e3b]/40 mr-8" />
+      </div>
 
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         {/* Main Content Grid */}
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
           
           {/* Left Column */}
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-8 leading-tight text-[#1A3320]">
+            <h2 className="font-serif text-2xl sm:text-3xl font-semibold mb-8 leading-tight text-[#1A3320]">
               Goals And Objectives
             </h2>
 
-            <p className="text-base sm:text-lg leading-relaxed text-[#355E3B] mb-8">
+            <p className="text-sm leading-relaxed text-[#272727] mb-8">
               "Elephants are more than just animals; they are individuals with unique stories,
-              behaviors, and roles in the ecosystem. My journey with Akageera elephants began in
-              2018, when I participated in a groundbreaking research assessment. For the first
-              time, I was able to identify individual elephants and understand their behaviors and
-              personalities. This experience changed my life profoundly and inspired me to create
-              Akageera Elephants Memories. Today, I want to share this knowledge with others – to
-              help young guides, tourists, and local communities see elephants the way I do: as
+              behaviors, and roles in the ecosystem. My journey with Akagera's
+              elephants began in 2018, when I participated in a
+              groundbreaking research  assessment. For the
+              first time, I was able to identify individual
+              elephants and understand their behaviors and
+              personalities. This experience changed my life
+              and inspired me to create Akagera Elephants
+              Memories. To day, I want to share this knowledge
+              with others – to help young guides, tourists, and
+              local communities see elephants the way I do: as
               individuals worth protecting and celebrating."
             </p>
 
-            <div className="text-sm text-[#4C8C4A] mt-6">
-              – Godfreud NYAMURANGWA, Founder
+            <div className="text-sm text-[#355e3b] italic">
+              ~ Godefroid NYAMURANGWA, Founder
             </div>
-{/* 
-            <button className="mt-12 px-6 py-3 border border-[#4C8C4A] text-[#355E3B] hover:bg-[#CFE8D4] transition-colors font-medium tracking-wide text-sm">
-              Learn More →
-            </button> */}
           </div>
 
           {/* Right Column */}
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-8 leading-tight text-[#1A3320]">
+            <h2 className="font-serif text-2xl sm:text-3xl font-semibold mb-8 leading-tight text-[#1A3320]">
               Why This Project Matters
             </h2>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               {highlights.map((item, index) => (
                 <div
                   key={index}
-                  className={`flex items-center gap-3 ${
+                  className={`flex items-center justify-between py-4 px-6 rounded-full transition-colors cursor-pointer ${
                     item.highlighted
-                      ? 'bg-[#1A3320] text-white px-6 py-4 rounded'
-                      : ''
+                      ? 'bg-[#2D3E2F] text-white'
+                      : 'bg-[#e8e8e8]/60 text-[#272727] hover:bg-[#e8e8e8]'
                   }`}
                 >
-                  <div className="flex-shrink-0">
-                    <ArrowUpRight
-                      className={`w-5 h-5 ${
-                        item.highlighted
-                          ? 'text-white'
-                          : 'text-[#355E3B]'
-                      }`}
-                    />
-                  </div>
                   <span
-                    className={`font-medium tracking-wider text-sm ${
+                    className={`font-medium tracking-wider text-xs uppercase ${
                       item.highlighted
                         ? 'text-white'
-                        : 'text-[#355E3B]'
+                        : 'text-[#272727]'
                     }`}
                   >
                     {item.title}
                   </span>
+                  <ArrowUpRight
+                    className={`w-4 h-4 ${
+                      item.highlighted
+                        ? 'text-white'
+                        : 'text-[#272727]'
+                    }`}
+                  />
                 </div>
               ))}
             </div>
           </div>
-
         </div>
 
-        {/* Bottom Decorations */}
-        <div className="absolute bottom-20 right-10 w-32 h-8 bg-[#1A3320] opacity-30 rounded" />
-        <div className="absolute bottom-40 left-20 w-24 h-24 rounded-full bg-[#1A3320] opacity-30" />
+        {/* Learn More Button centered with dotted line */}
+        <div className="flex items-center justify-center mt-16 gap-4">
+          <Link
+            href="/about"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-[#272727] text-[#272727] text-sm hover:bg-[#272727] hover:text-white transition-colors"
+          >
+            Learn More
+            <ArrowUpRight size={14} />
+          </Link>
+          <div className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 bg-[#355e3b]/50 rounded-full" />
+            <div className="w-64 border-t-2 border-dashed border-[#355e3b]/40" />
+            <span className="w-1.5 h-1.5 bg-[#355e3b]/50 rounded-full" />
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -127,7 +127,7 @@ export default function Home() {
           </div>
 
           {/* Family Cards Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-8 ">
             {/* Card 1 - MURINZI */}
             <div className="relative overflow-hidden rounded-lg group">
               <div className="aspect-[4/3] relative">
