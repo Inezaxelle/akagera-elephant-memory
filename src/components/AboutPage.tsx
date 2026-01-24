@@ -31,7 +31,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="w-24 h-24 md:w-40 lg:w-48 md:h-40 lg:h-48 rounded-full overflow-hidden border-2 md:border-4 border-[#355e3b]">
                 <Image 
-                  src="/images/elephant1.jpg" 
+                  src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.34.jpeg" 
                   alt="Elephant"
                   width={192}
                   height={192}
@@ -48,7 +48,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="w-32 h-20 md:w-56 lg:w-64 md:h-32 lg:h-40 rounded-full overflow-hidden border-2 md:border-4 border-[#355e3b]">
                 <Image 
-                  src="/images/elephant1.jpg" 
+                  src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.43.jpeg" 
                   alt="Elephant"
                   width={256}
                   height={160}
@@ -65,7 +65,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="w-20 h-40 md:w-28 lg:w-32 md:h-64 lg:h-80 rounded-full overflow-hidden border-2 md:border-4 border-[#355e3b]">
                 <Image 
-                  src="/images/elephant1.jpg" 
+                  src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.33.09.jpeg" 
                   alt="Elephant"
                   width={128}
                   height={320}
@@ -82,7 +82,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="w-32 h-32 md:w-48 lg:w-56 md:h-48 lg:h-56 rounded-full overflow-hidden border-2 md:border-4 border-[#355e3b]">
                 <Image 
-                  src="/images/elephant1.jpg" 
+                  src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.58.jpeg" 
                   alt="Elephant"
                   width={224}
                   height={224}

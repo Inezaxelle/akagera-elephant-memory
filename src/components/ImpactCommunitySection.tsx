@@ -126,7 +126,7 @@ export default function ImpactCommunitySection() {
           {/* Right: Elephant Image with Buttons */}
           <div className="relative h-[350px] md:h-[420px] rounded-tl-[60px] overflow-hidden">
             <Image
-              src="/images/elephant1.jpg"
+              src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.36.jpeg"
               alt="Elephant"
               fill
               className="object-cover"
