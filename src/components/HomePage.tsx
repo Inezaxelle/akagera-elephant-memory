@@ -42,7 +42,7 @@ export default function HomePage() {
 
             {/* Right side - Description */}
             <div className="lg:w-[45%] space-y-8 md:pt-120 md:pl-20">
-              <p className="text-lg leading-relaxed text-white">
+              <p className="text-lg leading-relaxed text-white font-jost">
                 Elephants carry stories in their footsteps — tales of memory, family, and survival. Each one holds a
                 world of wisdom worth listening to. They're not just giants of the wild;
               </p>

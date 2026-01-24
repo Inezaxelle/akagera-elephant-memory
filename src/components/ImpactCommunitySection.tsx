@@ -14,10 +14,10 @@ export default function ImpactCommunitySection() {
   })
 
   const targetCounts = {
-    elephants: 83,
+    elephants: 150,
     bulls: 29,
     tuskless: 5,
-    growth: 240
+    growth: 600
   }
 
   useEffect(() => {
@@ -93,7 +93,7 @@ export default function ImpactCommunitySection() {
                   <div className="text-5xl md:text-6xl font-serif text-[#355e3b] mb-2">
                     {counts.elephants}
                   </div>
-                  <div className="text-sm text-[#606873]">Total Elephants</div>
+                  <div className="text-sm text-[#606873] font-jost">Total Elephants (2024 Census)</div>
                 </div>
                 
                 {/* Top Right - 29 Identified Bulls */}
@@ -101,7 +101,7 @@ export default function ImpactCommunitySection() {
                   <div className="text-5xl md:text-6xl font-serif text-[#355e3b] mb-2">
                     {counts.bulls}
                   </div>
-                  <div className="text-sm text-[#606873]">Identified Bulls</div>
+                  <div className="text-sm text-[#606873] font-jost">Identified Bulls</div>
                 </div>
                 
                 {/* Bottom Left - 5 Tuskless Elephants */}
@@ -109,15 +109,15 @@ export default function ImpactCommunitySection() {
                   <div className="text-5xl md:text-6xl font-serif text-[#355e3b] mb-2">
                     {counts.tuskless}
                   </div>
-                  <div className="text-sm text-[#606873]">Tuskless Elephants</div>
+                  <div className="text-sm text-[#606873] font-jost">Tuskless Elephants</div>
                 </div>
                 
-                {/* Bottom Right - 240% Community Growth */}
+                {/* Bottom Right - 600 Families Supported */}
                 <div className="text-center py-8 pl-8">
                   <div className="text-5xl md:text-6xl font-serif text-[#355e3b] mb-2">
-                    {counts.growth}<span className="text-3xl text-[#355e3b]/60">%</span>
+                    {counts.growth}+
                   </div>
-                  <div className="text-sm text-[#606873]">Community growth</div>
+                  <div className="text-sm text-[#606873] font-jost">Families Supported (COVID-19)</div>
                 </div>
               </div>
             </div>

@@ -83,12 +83,12 @@ export default function GalleryPage() {
 
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 md:px-6 max-w-5xl mx-auto">
-          <h1 className="text-[#ffffff] font-bold mb-6 md:mb-8 text-4xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight" style={{letterSpacing: '0.2em', lineHeight: '1.2'}}>
+          <h1 className="text-[#ffffff] font-bold mb-6 md:mb-8 text-4xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight font-serif" style={{letterSpacing: '0.2em', lineHeight: '1.2'}}>
             GALLERY
           </h1>
-          <p className="text-[#c0cdc2] text-sm md:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed px-4">
-            Launch stunning, responsive sites without hiring designers or developers<br className="hidden md:block" />
-            <span className="md:inline"> </span>— perfect for early-stage startups and growing SaaS companies.
+          <p className="text-[#c0cdc2] text-sm md:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed px-4 font-jost">
+            Explore the visual stories of Akagera's elephants—from individual portraits to family groups, from research moments to community interactions.<br className="hidden md:block" />
+            <span className="md:inline"> </span>— Each image tells a story of resilience, memory, and the deep connections between elephants, people, and the land they share.
           </p>
         </div>
 
@@ -97,171 +97,303 @@ export default function GalleryPage() {
 
       {/* Gallery Section */}
       <section className="py-12 md:py-16 lg:py-20 bg-[#fbf9f9]">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           {/* Section Header */}
-          <div className="relative mb-10 md:mb-16">
+          <div className="relative mb-12 md:mb-16">
             <div className="flex items-center justify-center gap-4 md:gap-8">
               <div className="flex-1 h-px border-t-2 border-dotted border-[#c0cdc2]" />
-              <h2 className="text-[#132115] font-bold text-2xl md:text-3xl lg:text-4xl tracking-widest">TAKE A LOOK</h2>
+              <h2 className="text-[#132115] font-bold font-serif text-2xl md:text-3xl lg:text-4xl tracking-widest">TAKE A LOOK</h2>
               <div className="flex-1 h-px border-t-2 border-dotted border-[#c0cdc2]" />
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-8">
-            {/* Filter Sidebar */}
-          
-
-            {/* Masonry Gallery */}
-            <div className="flex-1">
-              <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-2 auto-rows-[300px] ">
-                {/* Tall image 1 */}
-                <div className="row-span-2 overflow-hidden rounded-lg">
+          {/* Enhanced Masonry Gallery */}
+          <div className="w-full">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+              {/* Image 1 - Tall */}
+              <div className="row-span-2 overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full h-full min-h-[400px]">
                   <Image
-                    src="/images/9T6A0871.jpg"
-                    alt="Elephant under shelter"
-                    width={150}
-                    height={300}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                {/* Wide image 1 */}
-                <div className="col-span-2 overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/9T6A0874.jpg"
-                    alt="Elephants in sanctuary"
-                    width={300}
-                    height={150}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                {/* Square images */}
-                <div className="overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/9T6A0877.jpg"
-                    alt="Young elephant walking"
-                    width={150}
-                    height={150}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/elephant1.jpg"
-                    alt="Elephants near fence"
-                    width={150}
-                    height={150}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/9T6A0910.jpg"
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.32.jpeg"
                     alt="Elephant portrait"
-                    width={150}
-                    height={150}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
+              </div>
 
-                <div className="overflow-hidden rounded-lg">
+              {/* Image 2 - Square */}
+              <div className="overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-square">
                   <Image
-                    src="/images/9T6A0967.jpg"
-                    alt="Elephant walking"
-                    width={150}
-                    height={150}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.33.jpeg"
+                    alt="Elephant in nature"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
+              </div>
 
-                {/* Tall image 2 */}
-                <div className="row-span-2 overflow-hidden rounded-lg">
+              {/* Image 3 - Wide */}
+              <div className="col-span-2 overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-[2/1]">
                   <Image
-                    src="/images/9T6A0970.jpg"
-                    alt="Two elephants together"
-                    width={150}
-                    height={300}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                {/* Wide image 2 */}
-                <div className="col-span-2 overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/9T6A1986.jpg"
-                    alt="Elephant in grassland"
-                    width={300}
-                    height={150}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                {/* Additional images */}
-                <div className="overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/9T6A2262.jpg"
-                    alt="Elephant bathing"
-                    width={150}
-                    height={150}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/9T6A2267.jpg"
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.34.jpeg"
                     alt="Elephant herd"
-                    width={150}
-                    height={150}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
+              </div>
 
-                <div className="overflow-hidden rounded-lg">
+              {/* Image 4 - Square */}
+              <div className="overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-square">
                   <Image
-                    src="/images/9T6A2282.jpg"
-                    alt="Elephant grazing"
-                    width={150}
-                    height={150}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.36.jpeg"
+                    alt="Elephant close-up"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
+              </div>
 
-                {/* More images - second row */}
-                <div className="col-span-2 overflow-hidden rounded-lg">
+              {/* Image 5 - Square */}
+              <div className="overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.37.jpeg"
+                    alt="Elephant walking"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 6 - Tall */}
+              <div className="row-span-2 overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full h-full min-h-[400px]">
+                  <Image
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.40.jpeg"
+                    alt="Elephant family"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 7 - Square */}
+              <div className="overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.42.jpeg"
+                    alt="Elephant portrait"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 8 - Wide */}
+              <div className="col-span-2 overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-[2/1]">
+                  <Image
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.43.jpeg"
+                    alt="Elephants in landscape"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 9 - Square */}
+              <div className="overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.45.jpeg"
+                    alt="Elephant detail"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 10 - Square */}
+              <div className="overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.46.jpeg"
+                    alt="Elephant in field"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 11 - Tall */}
+              <div className="row-span-2 overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full h-full min-h-[400px]">
+                  <Image
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.48.jpeg"
+                    alt="Elephant majestic"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 12 - Square */}
+              <div className="overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.54.jpeg"
+                    alt="Elephant profile"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 13 - Wide */}
+              <div className="col-span-2 overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-[2/1]">
+                  <Image
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.58.jpeg"
+                    alt="Elephant herd view"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 14 - Square */}
+              <div className="overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.33.09.jpeg"
+                    alt="Elephant close-up"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 15 - Square */}
+              <div className="overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.33.12.jpeg"
+                    alt="Elephant in nature"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 16 - Wide (from original gallery) */}
+              <div className="col-span-2 overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-[2/1]">
                   <Image
                     src="/images/9T6A2285.jpg"
                     alt="Elephants walking"
-                    width={300}
-                    height={150}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
+              </div>
 
-
-                {/* <div className="overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/elephant.png"
-                    alt="Elephant"
-                    width={150}
-                    height={150}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div> */}
-
-                <div className="row-span-2 overflow-hidden rounded-lg">
+              {/* Image 17 - Tall (from original gallery) */}
+              <div className="row-span-2 overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full h-full min-h-[400px]">
                   <Image
                     src="/images/9T6A2535.jpg"
                     alt="Elephant portrait"
-                    width={150}
-                    height={300}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
+              </div>
 
+              {/* Image 18 - Square (9T6 series) */}
+              <div className="overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/9T6A0871.jpg"
+                    alt="Elephant under shelter"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 19 - Wide (9T6 series) */}
+              <div className="col-span-2 overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-[2/1]">
+                  <Image
+                    src="/images/9T6A0874.jpg"
+                    alt="Elephants in sanctuary"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 20 - Square (9T6 series) */}
+              <div className="overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/9T6A0877.jpg"
+                    alt="Young elephant walking"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 21 - Square (9T6 series) */}
+              <div className="overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/9T6A0910.jpg"
+                    alt="Elephant portrait"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+
+              {/* Image 22 - Tall (9T6 series) */}
+              <div className="row-span-2 overflow-hidden rounded-xl group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative w-full h-full min-h-[400px]">
+                  <Image
+                    src="/images/9T6A0967.jpg"
+                    alt="Elephant walking"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
               </div>
             </div>
           </div>

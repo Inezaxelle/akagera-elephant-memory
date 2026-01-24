@@ -52,7 +52,7 @@ export default function ContactPage() {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-[0.3em] mb-6">
             CONTACT US
           </h1>
-          <p className="text-white text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-white text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-jost">
             We'd love to hear from you — let's protect and celebrate elephants
             together.
           </p>
@@ -99,7 +99,7 @@ export default function ContactPage() {
               <h3 className="text-3xl md:text-4xl font-bold text-[#355e3b] mb-6">
                 Get in touch
               </h3>
-              <p className="text-black text-lg mb-12">
+              <p className="text-black text-lg mb-12 font-jost">
                 Join Us in Protecting and Celebrating Elephants
               </p>
 
@@ -107,7 +107,7 @@ export default function ContactPage() {
                 <div className="flex items-start gap-4">
                   <Mail className="w-6 h-6 text-[#355e3b] flex-shrink-0 mt-1" />
                   <div>
-                    <p className="text-[#272727] hover:text-[#355e3b] transition-colors text-lg font-semibold">
+                    <p className="text-[#272727] hover:text-[#355e3b] transition-colors text-lg font-semibold font-jost">
                       <a
                         href="mailto:akageraelephants@gmail.com"
                         className=""
@@ -121,7 +121,7 @@ export default function ContactPage() {
                 <div className="flex items-start gap-4">
                   <Phone className="w-6 h-6 text-[#355e3b] flex-shrink-0 mt-1" />
                   <div>
-                    <p className="text-[#272727] hover:text-[#355e3b] transition-colors text-lg font-semibold">
+                    <p className="text-[#272727] hover:text-[#355e3b] transition-colors text-lg font-semibold font-jost">
                       <a
                         href="tel:+250782191219"
                         className=""
@@ -135,7 +135,7 @@ export default function ContactPage() {
                 <div className="flex items-start gap-4">
                   <MapPin className="w-6 h-6 text-[#355e3b] flex-shrink-0 mt-1" />
                   <div>
-                    <p className="text-[#272727] text-lg font-semibold">
+                    <p className="text-[#272727] text-lg font-semibold font-jost">
                       Kigali, Rwanda
                     </p>
                   </div>
@@ -196,7 +196,7 @@ export default function ContactPage() {
             <div className="hidden md:block w-32 lg:w-48 border-t-2 border-dotted border-gray-400" />
           </div>
 
-          <p className="text-center text-black text-lg mb-12 max-w-3xl mx-auto">
+          <p className="text-center text-black text-lg mb-12 max-w-3xl mx-auto font-jost">
             Come find us where stories of elephants and people meet — in the
             heart of Akagera.
           </p>

@@ -98,12 +98,12 @@ export default function AboutPage() {
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 md:px-6 max-w-5xl mx-auto">
           <h1 className="text-[#ffffff] font-bold mb-6 md:mb-8 text-4xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight" style={{letterSpacing: '0.2em', lineHeight: '1.2'}}>
-            <span className="block md:inline">ABOUT</span>
+            <span className="block md:inline text-6xl lg:text-6xl font-serif leading-tight">ABOUT</span>
             <br className="hidden md:block" />
-            <span className="block md:inline md:ml-4">US</span>
+            <span className="block md:inline md:ml-4 text-6xl lg:text-6xl font-serif leading-tight">US</span>
           </h1>
-          <p className="text-[#c0cdc2] text-sm md:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed px-4 mt-24">
-          Launch stunning, responsive sites without hiring designers or developers — perfect for early-stage startups and growing SaaS companies.<br className="hidden md:block" />
+          <p className="text-[#c0cdc2] text-sm md:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed px-4 mt-24 font-jost">
+          Growing up in the Akagera National Park neighbourhood, I heard many stories about wildlife, especially elephants. Those stories stayed with me and eventually led me to work as a guide through the Akagera Community Freelance Guides Cooperative in 2014.<br className="hidden md:block" />
           </p>
         </div>
 
@@ -145,8 +145,8 @@ export default function AboutPage() {
               <p className="text-xs tracking-widest text-[#355e3b] uppercase mb-6 font-medium">
                 FOUNDER
               </p>
-              <p className="text-sm lg:text-base text-[#132115] leading-relaxed mb-4">
-                In 2018, I joined a research project on Akagera's elephants with Dr. Tammie Nelson, an experience that transformed how I saw these animals. I learned to identify them by tusks, ears, and scars, observed their behaviors, and discovered their unique personalities. This opened my eyes to their complexity and the vital role they play in shaping ecosystems, from opening up landscapes for other species to influencing vegetation patterns. Inspired, I founded Akagera Elephant Memories to share this knowledge with guides and tourists, creating meaningful experiences while helping ensure these elephants are protected and celebrated for generations.
+              <p className="text-sm lg:text-base text-[#132115] leading-relaxed mb-4 font-jost">
+                Over time, I became deeply inspired by the Akagera elephant story of resilience—their incredible journey from near extinction to a thriving population of about 150 elephants, according to the 2024 census. I was particularly drawn to the story of Mutware, one of the original translocated elephants. He was bottle-fed and became habituated to people, later growing into a famous bull known both for crop-raiding incidents and as a major tourism attraction. Mutware died of natural causes in 2018, but his story left a lasting impact on me. As a guide, I wanted to preserve and share these stories in a meaningful way, especially with visitors and local communities. This inspired me to write a children's storybook in Kinyarwanda for local kids, titled Inzovu Mutware, published through Éditions Bakame. The program grew from this desire to keep Akagera's elephant memories alive for future generations.
               </p>
             </div>
           </div>
@@ -183,8 +183,8 @@ export default function AboutPage() {
                 <ArrowUpRight size={20} className="flex-shrink-0" />
               </div>
               {expandedGoal === "conservation" && (
-                <p className="text-base leading-relaxed opacity-90">
-                  Promote the protection of elephants through community outreach and educational campaigns.
+                <p className="text-base leading-relaxed opacity-90 font-jost">
+                  My mission is to use the Akagera Elephants Memories Program to build a healthier relationship between wildlife and the surrounding communities, so that people and elephants can live side by side with less conflict and more understanding. Akagera National Park itself is a powerful story of resurrection—moving from a period of serious challenges to becoming one of Africa's strongest conservation success stories.
                 </p>
               )}
             </div>
@@ -205,8 +205,8 @@ export default function AboutPage() {
                 <ArrowUpRight size={20} className="flex-shrink-0" />
               </div>
               {expandedGoal === "education" && (
-                <p className="text-base leading-relaxed opacity-90 mt-4">
-                  Develop educational programs and workshops for local communities about elephant conservation.
+                <p className="text-base leading-relaxed opacity-90 mt-4 font-jost">
+                  We teach both visitors and local communities about elephant behaviour, intelligence, family structure, and migration patterns—so elephants are seen not only as "problem animals" but as living beings with complex lives and an important ecological role. By sharing stories in local language and through local voices—like my book Inzovu Mutware—we make conservation relatable, especially for children and youth, who are the future decision-makers.
                 </p>
               )}
             </div>
@@ -227,8 +227,8 @@ export default function AboutPage() {
                 <ArrowUpRight size={20} className="flex-shrink-0" />
               </div>
               {expandedGoal === "knowledge" && (
-                <p className="text-base leading-relaxed opacity-90 mt-4">
-                  Document and preserve traditional knowledge about elephants for future generations.
+                <p className="text-base leading-relaxed opacity-90 mt-4 font-jost">
+                  My experience working with Dr. Tammi Matson in 2018 showed me how powerful it is to combine academic research with traditional field knowledge. The program helps young guides grow their skills with solid information and real-life experience, making them better storytellers, educators, and conservation partners. We preserve traditional knowledge by capturing local stories, observations, and historical memory about elephants so they are not lost.
                 </p>
               )}
             </div>
@@ -249,8 +249,8 @@ export default function AboutPage() {
                 <ArrowUpRight size={20} className="flex-shrink-0" />
               </div>
               {expandedGoal === "storytelling" && (
-                <p className="text-base leading-relaxed opacity-90 mt-4">
-                  Share compelling stories of individual elephants to inspire conservation action.
+                <p className="text-base leading-relaxed opacity-90 mt-4 font-jost">
+                  By naming elephants, documenting their behaviours, and sharing individual stories like Mutware or Murinzi, elephants are no longer seen only as wild animals, but as known characters with histories and meaning. This approach fits naturally within local culture, where storytelling has always been a way to teach values, responsibility, and respect.
                 </p>
               )}
             </div>
@@ -269,19 +269,19 @@ export default function AboutPage() {
               </h2>
               <div className="w-24 h-px border-t-2 border-dotted border-slate-300" />
             </div>
-            <p className="text-base text-[#606873] max-w-3xl mx-auto mt-6 leading-relaxed">
-              The Akagera Elephant Memories project is not just a short term initiative; it is the foundation of a long-term vision to ensure the survival and thriving of Akagera's elephants while empowering local communities.
+            <p className="text-base text-[#606873] max-w-3xl mx-auto mt-6 leading-relaxed font-jost">
+              My long-term vision is to establish a dedicated Education and Research Centre focused on elephants and community-based conservation around Akagera National Park. The centre would become a place where traditional knowledge and modern research are brought together, documented, and passed on to the next generation.
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-0 border-t border-slate-200">
             {/* Mission items */}
             {[
-              { num: "01", title: "Sustainable Conservation", content: "Establish a permanent monitoring system for Akagera's elephants to track their population, movements, and Health over time. Collaborate with conservation organization and researchers to contribute to global elephant conservation efforts." },
-              { num: "02", title: "Community Empowerment", content: "Empower local communities through education and economic opportunities tied to wildlife conservation." },
-              { num: "03", title: "Education and Awareness", content: "Develop comprehensive educational programs about elephant behavior, ecology, and conservation." },
-              { num: "04", title: "Eco-tourism development", content: "Build responsible ecotourism experiences that generate revenue for conservation." },
-              { num: "05", title: "Global Collaboration", content: "Partner with international conservation organizations to share knowledge globally." },
+              { num: "01", title: "Training Young Guides", content: "Building a structured learning space where young guides can develop deep knowledge—behaviour, tracking, conservation ethics, interpretation, and community engagement—using both traditional experience and research-based information." },
+              { num: "02", title: "Preserving Traditional Knowledge", content: "Capturing local stories, observations, and historical memory about elephants (like the story of Mutware) so they are not lost, and so communities feel ownership of the conservation narrative." },
+              { num: "03", title: "Elephant Research Experiences", content: "Creating a unique, responsible tourism and learning experience connected to elephant monitoring and research—where visitors can learn, contribute, and leave with genuine understanding, not just photos." },
+              { num: "04", title: "Stronger Coexistence Outcomes", content: "Using the centre and the program to reduce conflict by improving awareness, encouraging prevention methods, and helping communities see conservation as something that can benefit them directly." },
+              { num: "05", title: "Sustainable Impact", content: "Ensuring that conservation, memory, education, and livelihoods continue to reinforce each other, creating lasting positive change for both elephants and communities around Akagera National Park." },
             ].map((item, index) => (
               <div key={item.num} className="border-b border-slate-200">
                 <button
@@ -307,7 +307,7 @@ export default function AboutPage() {
                   }`}
                 >
                   <div className="px-4 pl-20">
-                    <p className="text-base text-[#606873] leading-relaxed">
+                    <p className="text-base text-[#606873] leading-relaxed font-jost">
                       {item.content}
                     </p>
                   </div>

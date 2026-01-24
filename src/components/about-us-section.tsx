@@ -33,7 +33,7 @@ export function AboutSection() {
         <div className="flex-1 border-t-2 border-dashed border-[#355e3b]/40 ml-8" />
         <div className="flex items-center gap-2 px-4 bg-[#fbf9f9]">
           <span className="w-1.5 h-1.5 bg-[#355e3b] rounded-full" />
-          <span className="text-xs tracking-[0.2em] text-[#355e3b] uppercase font-medium">
+          <span className="text-xs tracking-[0.2em] text-[#355e3b] uppercase font-serif font-medium">
             ABOUT US
           </span>
         </div>
@@ -50,22 +50,11 @@ export function AboutSection() {
               Goals And Objectives
             </h2>
 
-            <p className="text-sm leading-relaxed text-[#272727] mb-8">
-              "Elephants are more than just animals; they are individuals with unique stories,
-              behaviors, and roles in the ecosystem. My journey with Akagera's
-              elephants began in 2018, when I participated in a
-              groundbreaking research  assessment. For the
-              first time, I was able to identify individual
-              elephants and understand their behaviors and
-              personalities. This experience changed my life
-              and inspired me to create Akagera Elephants
-              Memories. To day, I want to share this knowledge
-              with others – to help young guides, tourists, and
-              local communities see elephants the way I do: as
-              individuals worth protecting and celebrating."
+            <p className="text-sm leading-relaxed text-[#272727] mb-8 font-jost">
+              "Elephants are among the most intelligent animals in the wild, with complex social structures and strong family bonds. After only four years of working experience as a guide, I was privileged to become the guide for Dr. Tammi Matson in 2018. She came to Rwanda at the invitation of Akagera management to conduct research on Akagera's elephants. That experience changed my life and completely transformed the way I look at the elephants of Akagera National Park. Through this collaboration, we gathered extensive information and many fascinating facts to share with others. It was a strong combination of academic research and traditional, field-based knowledge."
             </p>
 
-            <div className="text-sm text-[#355e3b] italic">
+            <div className="text-sm text-[#355e3b] italic font-jost">
               ~ Godefroid NYAMURANGWA, Founder
             </div>
           </div>
@@ -73,7 +62,7 @@ export function AboutSection() {
           {/* Right Column */}
           <div>
             <h2 className="font-serif text-2xl sm:text-3xl font-semibold mb-8 leading-tight text-[#1A3320]">
-              Why This Project Matters
+              What Makes Elephants Powerful Symbols
             </h2>
 
             <div className="space-y-4">
@@ -112,7 +101,7 @@ export function AboutSection() {
         <div className="flex items-center justify-center mt-16 gap-4">
           <Link
             href="/about"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-[#272727] text-[#272727] text-sm hover:bg-[#272727] hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-[#272727] text-[#272727] text-sm hover:bg-[#272727] hover:text-white transition-colors font-jost"
           >
             Learn More
             <ArrowUpRight size={14} />
