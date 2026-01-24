@@ -41,9 +41,14 @@ export default function ImpactPage() {
             <div className="absolute right-0 bottom-0 w-48 h-32 bg-[#fbf9f9] rounded-t-full" />
             
             {/* Center scroll button */}
-            <div className="absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-1/2">
-              <button className="bg-[#132115] rounded-full w-24 h-24 flex flex-col items-center justify-center text-white border-2 border-[#fbf9f9]">
-                <span className="text-xs uppercase tracking-wider mb-1">Scroll Down</span>
+            <div className="absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-1/2 z-10">
+              <button 
+                onClick={() => {
+                  document.getElementById('what-is-in-place')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="bg-[#132115] rounded-full w-24 h-24 flex flex-col items-center justify-center text-white border-2 border-[#fbf9f9] hover:bg-[#355e3b] transition-colors cursor-pointer"
+              >
+                <span className="text-xs uppercase tracking-wider mb-1 font-jost">Scroll Down</span>
                 <ArrowDown className="w-4 h-4" />
               </button>
             </div>
@@ -56,11 +61,11 @@ export default function ImpactPage() {
       </div>
 
       {/* What Is In Place Section */}
-      <section className="container mx-auto px-4 py-16 md:py-24">
+      <section id="what-is-in-place" className="container mx-auto px-4 py-16 md:py-24">
         <div className="text-center mb-16">
           <div className="relative inline-block">
             <div className="absolute -left-32 top-1/2 w-24 border-t-2 border-dotted border-[#d9d9d9] " />
-            <h2 className="text-2xl md:text-3xl font-light tracking-[0.2em] uppercase text-[#170f49]">What Is In Place</h2>
+            <h2 className="text-2xl md:text-3xl font-light tracking-[0.2em] uppercase text-[#170f49] font-serif">What Is In Place</h2>
             <div className="absolute -right-32 top-1/2 w-24 border-t-2 border-dotted border-[#d9d9d9]" />
           </div>
         </div>
@@ -70,25 +75,25 @@ export default function ImpactPage() {
           <div className="relative flex justify-center items-center">
             <div className="relative w-full max-w-md">
               {/* Three overlapping rounded images */}
-              <div className="absolute top-0 left-0 w-32 h-48 md:w-40 md:h-56 rounded-full overflow-hidden z-30">
+              <div className="absolute top-0 left-0 w-32 h-48 md:w-40 md:h-56 rounded-full overflow-hidden z-30 border-2 border-[#355e3b]/20">
                 <Image
-                  src="/images/elephant1.jpg"
+                  src="/images/9T6A0871.jpg"
                   alt="Elephant"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="absolute top-12 left-1/2 -translate-x-1/2 w-32 h-48 md:w-40 md:h-56 rounded-full overflow-hidden z-20">
+              <div className="absolute top-12 left-1/2 -translate-x-1/2 w-32 h-48 md:w-40 md:h-56 rounded-full overflow-hidden z-20 border-2 border-[#355e3b]/20">
                 <Image
-                  src="/images/elephant1.jpg"
+                  src="/images/9T6A0877.jpg"
                   alt="Elephant"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="absolute top-24 right-0 w-32 h-48 md:w-40 md:h-56 rounded-full overflow-hidden z-10">
+              <div className="absolute top-24 right-0 w-32 h-48 md:w-40 md:h-56 rounded-full overflow-hidden z-10 border-2 border-[#355e3b]/20">
                 <Image
-                  src="/images/elephant1.jpg"
+                  src="/images/9T6A0967.jpg"
                   alt="Elephant"
                   fill
                   className="object-cover"
@@ -108,31 +113,30 @@ export default function ImpactPage() {
           </div>
         </div>
 
-        {/* Dotted line with border */}
-        <div className="relative mt-16 flex justify-center">
-          <div className="absolute left-0 top-1/2 w-full border-t-2 border-dotted border-[#d9d9d9]" />
-          <div className="relative bg-[#fbf9f9] px-8">
-            <h4 className="text-sm uppercase tracking-[0.2em] text-[#272727]">The Story In Numbers</h4>
+        {/* The Story In Numbers Section */}
+        <div className="mt-20 mb-12">
+          <div className="text-center mb-12">
+            <h3 className="text-xl md:text-2xl font-light tracking-[0.2em] uppercase text-[#272727] font-serif">THE STORY IN NUMBERS</h3>
           </div>
-        </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 max-w-5xl mx-auto">
-          <div className="border-2 border-dotted border-[#d9d9d9] p-8 text-center">
-            <div className="text-5xl md:text-6xl font-light text-[#355e3b] mb-2">150</div>
-            <div className="text-sm text-[#272727] font-jost">Total Elephants (2024)</div>
-          </div>
-          <div className="border-2 border-dotted border-[#d9d9d9] p-8 text-center">
-            <div className="text-5xl md:text-6xl font-light text-[#355e3b] mb-2">$26,500</div>
-            <div className="text-sm text-[#272727] font-jost">Community Tourism Income</div>
-          </div>
-          <div className="border-2 border-dotted border-[#d9d9d9] p-8 text-center">
-            <div className="text-5xl md:text-6xl font-light text-[#355e3b] mb-2">600+</div>
-            <div className="text-sm text-[#272727] font-jost">Families Supported</div>
-          </div>
-          <div className="border-2 border-dotted border-[#d9d9d9] p-8 text-center">
-            <div className="text-5xl md:text-6xl font-light text-[#355e3b] mb-2">$20,000</div>
-            <div className="text-sm text-[#272727] font-jost">COVID-19 Relief Support</div>
+          {/* Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
+            <div className="border-2 border-dotted border-[#d9d9d9] p-6 md:p-8 text-center bg-white">
+              <div className="text-4xl md:text-5xl lg:text-6xl font-light text-[#355e3b] mb-2 font-serif">150</div>
+              <div className="text-xs md:text-sm text-[#272727] font-jost">Total Elephants (2024)</div>
+            </div>
+            <div className="border-2 border-dotted border-[#d9d9d9] p-6 md:p-8 text-center bg-white">
+              <div className="text-4xl md:text-5xl lg:text-6xl font-light text-[#355e3b] mb-2 font-serif">$26,500</div>
+              <div className="text-xs md:text-sm text-[#272727] font-jost">Community Tourism Income</div>
+            </div>
+            <div className="border-2 border-dotted border-[#d9d9d9] p-6 md:p-8 text-center bg-white">
+              <div className="text-4xl md:text-5xl lg:text-6xl font-light text-[#355e3b] mb-2 font-serif">600+</div>
+              <div className="text-xs md:text-sm text-[#272727] font-jost">Families Supported</div>
+            </div>
+            <div className="border-2 border-dotted border-[#d9d9d9] p-6 md:p-8 text-center bg-white">
+              <div className="text-4xl md:text-5xl lg:text-6xl font-light text-[#355e3b] mb-2 font-serif">$20,000</div>
+              <div className="text-xs md:text-sm text-[#272727] font-jost">COVID-19 Relief Support</div>
+            </div>
           </div>
         </div>
       </section>
@@ -152,13 +156,36 @@ export default function ImpactPage() {
               </p>
             </div>
           </div>
-          <div className="relative h-80 rounded-lg overflow-hidden">
-            <Image
-              src="/images/community.png"
-              alt="Community members"
-              fill
-              className="object-cover"
-            />
+          <div className="relative flex justify-center items-center h-80">
+            <div className="relative w-full max-w-md">
+              {/* Three overlapping rounded images */}
+              <div className="absolute top-0 left-0 w-32 h-48 md:w-40 md:h-56 rounded-full overflow-hidden z-30 border-2 border-[#355e3b]/20 shadow-lg">
+                <Image
+                  src="/images/9T6A0970.jpg"
+                  alt="Community members"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="absolute top-12 left-1/2 -translate-x-1/2 w-32 h-48 md:w-40 md:h-56 rounded-full overflow-hidden z-20 border-2 border-[#355e3b]/20 shadow-lg">
+                <Image
+                  src="/images/9T6A2262.jpg"
+                  alt="Elephant close-up"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="absolute top-24 right-0 w-32 h-48 md:w-40 md:h-56 rounded-full overflow-hidden z-10 border-2 border-[#355e3b]/20 shadow-lg">
+                <Image
+                  src="/images/9T6A2267.jpg"
+                  alt="Community group"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              {/* Spacer to maintain height */}
+              <div className="h-72 md:h-80" />
+            </div>
           </div>
         </div>
       </section>

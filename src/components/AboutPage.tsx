@@ -98,9 +98,9 @@ export default function AboutPage() {
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 md:px-6 max-w-5xl mx-auto">
           <h1 className="text-[#ffffff] font-bold mb-6 md:mb-8 text-4xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight" style={{letterSpacing: '0.2em', lineHeight: '1.2'}}>
-            <span className="block md:inline text-6xl lg:text-6xl font-serif leading-tight">ABOUT</span>
+            <span className="block md:inline font-serif">ABOUT</span>
             <br className="hidden md:block" />
-            <span className="block md:inline md:ml-4 text-6xl lg:text-6xl font-serif leading-tight">US</span>
+            <span className="block md:inline font-serif">US</span>
           </h1>
           <p className="text-[#c0cdc2] text-sm md:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed px-4 mt-24 font-jost">
           Growing up in the Akagera National Park neighbourhood, I heard many stories about wildlife, especially elephants. Those stories stayed with me and eventually led me to work as a guide through the Akagera Community Freelance Guides Cooperative in 2014.<br className="hidden md:block" />
