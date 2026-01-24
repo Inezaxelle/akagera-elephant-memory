@@ -16,12 +16,12 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative bg-[var(--color-secondary)] text-white px-6 lg:px-16 py-20 lg:py-32 overflow-hidden min-h-screen">
         <div className="md:absolute inset-0 md:flex items-center justify-center pointer-events-none hidden">
-          <div className="relative w-full max-w-[1400px] h-[1400px] opacity-80">
+          <div className="relative w-full max-w-[1400px] h-[1400px] opacity-80 ">
             <Image
-              src="/images/elephant.png"
+              src="/images/Shape.svg"
               alt="Elephant in Akagera"
               fill
-              className="object-contain"
+              className="object-contain pr-10 pb-7"
               priority
             />
           </div>
