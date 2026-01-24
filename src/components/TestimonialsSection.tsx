@@ -5,19 +5,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const testimonials = [
   {
-    text: "A visual guide could be a wireframe, creative composition, or information architecture. A device that enables collaboration will lessen the chance of work having to be completely redone. A manager could create a visual guide for the team to complete the build-out.",
-    author: "Matt Cannon",
-    role: "Visitor"
+    text: "Community members and fellow guides from the Akagera Community Freelance Guides Cooperative have expressed deep gratitude for the project. Many have said that without the Akagera Elephants Memories program, they would have suffered greatly during the COVID-19 period in 2019–2020. The support received during that difficult time remains a memorable and deeply touching experience, especially because guests transformed into donors when the community needed help the most.",
+    author: "Community Members",
+    role: "Akagera Community Guides"
   },
   {
-    text: "A visual guide could be a wireframe, creative composition, or information architecture. A device that enables collaboration will lessen the chance of work having to be completely redone. A manager could create a visual guide for the team to complete the build-out.",
-    author: "Sophie Moore",
-    role: "Community Member"
+    text: "Participants often describe feeling deeply moved and personally connected. Visitors say the experience stays with them long after they leave Akagera, not only because of seeing elephants, but because of understanding their stories, behaviours, and relationship with the surrounding communities. Many feel a sense of responsibility and pride in being part of something meaningful.",
+    author: "Program Participants",
+    role: "Visitors & Community Members"
   },
   {
-    text: "This initiative has truly transformed our understanding of elephant conservation. The work being done here is remarkable and inspiring.",
-    author: "John Smith",
-    role: "Researcher"
+    text: "For community members and guides, the project brings dignity, hope, and confidence. Being able to share their knowledge and stories makes them feel valued and respected. The emotional connection created through the program turns a simple visit into a lasting memory for everyone involved.",
+    author: "Local Guides",
+    role: "Community Partners"
   }
 ]
 
@@ -93,14 +93,14 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Text */}
-              <p className="text-[#4a4a4a] leading-relaxed mb-8 text-base">
+              <p className="text-[#4a4a4a] leading-relaxed mb-8 text-base font-jost">
                 {firstTestimonial.text}
               </p>
 
               {/* Author */}
               <div>
-                <p className="font-semibold text-[#1a1a1a] text-lg">{firstTestimonial.author}</p>
-                <p className="text-sm text-[#7a7a7a]">{firstTestimonial.role}</p>
+                <p className="font-semibold text-[#1a1a1a] text-lg font-jost">{firstTestimonial.author}</p>
+                <p className="text-sm text-[#7a7a7a] font-jost">{firstTestimonial.role}</p>
               </div>
             </div>
 
@@ -116,14 +116,14 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Text */}
-              <p className="text-[#4a4a4a] leading-relaxed mb-8 text-base">
+              <p className="text-[#4a4a4a] leading-relaxed mb-8 text-base font-jost">
                 {secondTestimonial.text}
               </p>
 
               {/* Author */}
               <div>
-                <p className="font-semibold text-[#1a1a1a] text-lg">{secondTestimonial.author}</p>
-                <p className="text-sm text-[#7a7a7a]">{secondTestimonial.role}</p>
+                <p className="font-semibold text-[#1a1a1a] text-lg font-jost">{secondTestimonial.author}</p>
+                <p className="text-sm text-[#7a7a7a] font-jost">{secondTestimonial.role}</p>
               </div>
             </div>
           </div>

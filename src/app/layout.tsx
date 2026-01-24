@@ -1,7 +1,7 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Cinzel, Inter } from "next/font/google";
+import { Cinzel, Inter, Jost } from "next/font/google";
 
 const cinzel = Cinzel({ 
   subsets: ["latin"], 
@@ -13,6 +13,12 @@ const cinzel = Cinzel({
 const inter = Inter({ 
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
+});
+
+const jost = Jost({ 
+  subsets: ["latin"],
+  variable: "--font-jost",
   display: "swap",
 });
 
@@ -28,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${cinzel.variable} font-sans`}>
+      <body className={`${inter.variable} ${cinzel.variable} ${jost.variable} font-sans`}>
         <Header />
         <main>{children}</main>
         <Footer />
