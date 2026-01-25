@@ -116,7 +116,7 @@ export default function GalleryPreviewSection() {
         <div className="relative flex flex-col items-center gap-4 mt-12 md:mt-72">
           <Link
             href="/gallery"
-            className="inline-flex items-center gap-2 border-2  border-white px-8 py-3 text-sm uppercase tracking-wide text-white hover:bg-white hover:text-[#355e3b] transition-colors bg-transparent "
+            className="inline-flex items-center gap-2 border-2  border-white px-8 py-3 text-sm uppercase tracking-wide text-white hover:bg-[#0b041c] hover:text-[#355e3b] transition-colors bg-transparent "
           >
             View Gallery
             <ArrowUpRight size={16} />

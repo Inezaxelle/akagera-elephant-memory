@@ -50,7 +50,7 @@ export default function HomePage() {
               <div className="flex items-center gap-6">
                 <Link
                   href="/stories"
-                  className="inline-block border border-white px-8 py-3 text-sm uppercase tracking-wide hover:bg-white hover:text-[var(--color-secondary)] transition-colors"
+                  className="inline-block border border-white px-8 py-3 text-sm uppercase tracking-wide hover:bg-[#0b041c] transition-colors"
                 >
                   Explore Stories
                 </Link>

@@ -9,7 +9,7 @@ export default function ContactPage() {
         {/* Decorative Elephant Images */}
         <div className="absolute top-20 left-8 md:left-20 w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden opacity-90">
           <Image
-            src="/images/elephant1.jpg"
+            src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.34.jpeg"
             alt="Elephant"
             fill
             className="object-cover"
@@ -18,7 +18,7 @@ export default function ContactPage() {
 
         <div className="absolute top-32 md:top-40 left-12 md:left-16 w-32 h-20 md:w-48 md:h-28 rounded-full overflow-hidden opacity-90">
           <Image
-            src="/images/elephant1.jpg"
+            src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.33.09.jpeg"
             alt="Elephant"
             fill
             className="object-cover"
@@ -27,7 +27,7 @@ export default function ContactPage() {
 
         <div className="absolute top-24 md:top-32 right-12 md:right-24 w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden opacity-90">
           <Image
-            src="/images/elephant1.jpg"
+            src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.32.34.jpeg"
             alt="Elephant"
             fill
             className="object-cover"
@@ -36,7 +36,7 @@ export default function ContactPage() {
 
         <div className="absolute top-48 md:top-56 left-1/2 -translate-x-1/2 w-32 h-48 md:w-40 md:h-64 rounded-full overflow-hidden opacity-90">
           <Image
-            src="/images/elephant1.jpg"
+            src="/images/new_elphant_gallery/WhatsApp Image 2026-01-23 at 13.33.09.jpeg"
             alt="Elephant"
             fill
             className="object-cover"

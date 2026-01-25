@@ -101,7 +101,7 @@ export function AboutSection() {
         <div className="flex items-center justify-center mt-16 gap-4">
           <Link
             href="/about"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-[#272727] text-[#272727] text-sm hover:bg-[#272727] hover:text-white transition-colors font-jost"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-[#272727] text-[#272727] text-sm hover:bg-[#0b041c] hover:text-white transition-colors font-jost"
           >
             Learn More
             <ArrowUpRight size={14} />

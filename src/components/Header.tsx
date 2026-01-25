@@ -41,7 +41,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <Link
             href="/contact"
-            className="hidden md:block border border-white px-3 py-2 text-sm hover:bg-white hover:text-[var(--color-secondary)] transition"
+            className="hidden md:block border border-white px-3 py-2 text-sm hover:bg-[#0b041c] hover:text-[var(--color-secondary)] transition"
           >
             Contact Us ↗
           </Link>
