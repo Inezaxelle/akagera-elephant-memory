@@ -8,7 +8,7 @@ import ImpactCommunitySection from "./ImpactCommunitySection"
 import GalleryPreviewSection from "./GalleryPreviewSection"
 import TestimonialsSection from "./TestimonialsSection"
 import DonateSection from "./DonateSection"
-import PartnersSection from "./PartnersSection"
+// import PartnersSection from "./PartnersSection"
 
 export default function HomePage() {
   return (
@@ -100,7 +100,7 @@ export default function HomePage() {
       <DonateSection />
 
       {/* Partners Section */}
-      <PartnersSection />
+      {/* <PartnersSection /> */}
 
     </div>
   )

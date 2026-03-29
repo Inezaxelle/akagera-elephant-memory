@@ -228,7 +228,7 @@ export default function AboutPage() {
               </div>
               {expandedGoal === "knowledge" && (
                 <p className="text-base leading-relaxed opacity-90 mt-4 font-jost">
-                  My experience working with Dr. Tammi Matson in 2018 showed me how powerful it is to combine academic research with traditional field knowledge. The program helps young guides grow their skills with solid information and real-life experience, making them better storytellers, educators, and conservation partners. We preserve traditional knowledge by capturing local stories, observations, and historical memory about elephants so they are not lost.
+                  My experience working with Dr. Tammie Matson  in 2018 showed me how powerful it is to combine academic research with traditional field knowledge. The program helps young guides grow their skills with solid information and real-life experience, making them better storytellers, educators, and conservation partners. We preserve traditional knowledge by capturing local stories, observations, and historical memory about elephants so they are not lost.
                 </p>
               )}
             </div>

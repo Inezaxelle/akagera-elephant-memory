@@ -51,7 +51,7 @@ export function AboutSection() {
             </h2>
 
             <p className="text-sm leading-relaxed text-[#272727] mb-8 font-jost">
-              "Elephants are among the most intelligent animals in the wild, with complex social structures and strong family bonds. After only four years of working experience as a guide, I was privileged to become the guide for Dr. Tammi Matson in 2018. She came to Rwanda at the invitation of Akagera management to conduct research on Akagera's elephants. That experience changed my life and completely transformed the way I look at the elephants of Akagera National Park. Through this collaboration, we gathered extensive information and many fascinating facts to share with others. It was a strong combination of academic research and traditional, field-based knowledge."
+              "Elephants are among the most intelligent animals in the wild, with complex social structures and strong family bonds. After only four years of working experience as a guide, I was privileged to become the guide for Dr. Tammie Matson in 2018. She came to Rwanda at the invitation of Akagera management to conduct research on Akagera's elephants. That experience changed my life and completely transformed the way I look at the elephants of Akagera National Park. Through this collaboration, we gathered extensive information and many fascinating facts to share with others. It was a strong combination of academic research and traditional, field-based knowledge."
             </p>
 
             <div className="text-sm text-[#355e3b] italic font-jost">
